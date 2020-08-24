@@ -9,20 +9,86 @@
       }
 
       #wrap {
+        width: 960px;
         background: #eeeeee;
+        position: relative;
+        left: 50%;
+        margin-left: -480px;
       }
 
-      a {
-        color: #000000;
-        text-decoration: none;
+      #header {
+        background: #eeeeee;
+        padding: 20px;
+      }
+
+      #header .logo {
+        float: left;
+      }
+
+      #header img {
+        width: 300px;
+        height: 140px;
+      }
+
+      #content {
+        padding: 20px;
+      }
+
+      #content img {
+        width: 100%;
+      }
+
+      #footer {
+        background: #000000;
+        height: 50px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #footer span {
+        color: #ffffff;
+      }
+
+      .clear {
+        clear: both;
       }
     </style>
   </head>
 
   <body>
     <div id="wrap">
-      test
-      <a href="#">클릭</a>
+      <div id="header">
+        <span class="logo"
+          ><img
+            src="https://i.kym-cdn.com/photos/images/facebook/001/871/692/e4f.png"
+            alt="bna logo"
+          />
+        </span>
+        <h1>CSS 활용강의</h1>
+        <h2>레이아웃 1 - 단일 레이아웃 만들기</h2>
+      </div>
+      <div class="clear"></div>
+      <div id="content">
+        <h3>레이아웃을 만드는 방법</h3>
+        <img
+          src="https://occ-0-1068-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABYS_vxGgGu1wg-o8M10Mm67DbbVdd2fEUdWRjl3qBnRfafyYwUBS3Cfra-rWlpBZhemuJlrUzUuU2znKpPj5ntfWv05n.jpg?r=112"
+          alt="배경 이미지 bna"
+        />
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div id="footer">
+        <span>2020 CSS 활용강좌 실습 ALL rights reserved</span>
+      </div>
     </div>
   </body>
 </html>
